@@ -1,0 +1,317 @@
+*{
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+.topbar{
+    position: sticky;
+    top:0px;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    background-color: #2C3E50;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar a{
+    text-decoration: none;
+}
+.logo{
+    margin-left: 30px;
+    font-size: 30px;
+    color: #FFFF;
+}
+.navbar{
+    margin-right: 30px;
+    font-size: 18px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a{
+    color: rgba(255, 255, 255, 0.67);
+}
+.navbar a:hover{
+    color: white;
+}
+
+
+/* Contenu Principal*/
+
+.maincontent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+/*contenu de gauche*/
+
+.leftcontent{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftcontent a{
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 20px;
+    height: 30px;
+    width: 300px;
+    padding-top: 5px;
+}
+
+.leftcontent a:nth-child(1)::before{
+    background-image: url(../images/homeicon.svg);
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    content:"";
+ }
+ .leftcontent a:nth-child(2)::before{
+    background-image: url(../images/messageicon.svg);
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    content:"";
+ }
+ .leftcontent a:nth-child(3)::before{
+    background-image: url(../images/eventicon.svg);
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    content:"";
+ }
+ .leftcontent a:nth-child(4)::before{
+    background-image: url(../images/groupicon.svg);
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    content:"";
+ }
+ .leftcontent a:nth-child(5)::before{
+    background-image: url(../images/friendicon.svg);
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px; 
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    content:"";
+ }
+ .leftcontent a:hover{
+     background-color: white;
+     border: 1px solid #DBDBDB;
+     border-radius: 5px;
+     
+     font-weight: bold;
+ }
+
+ /* Contenu du milieu */
+
+.middlecontent{  
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+.upperandmiddle{
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+.upperbanner{
+    display: flex;
+    margin : 5px auto;
+    width: 100%;
+}
+.upperbanner img{
+    display: block;
+    border-radius: 50%;
+    padding: 5px 10px;
+    height: 80px;
+    width: 80px;
+}
+.textbanner{
+    display: flex;
+    flex-direction: column;
+    line-height: 5px;
+    justify-content: center;
+}
+.textbanner p:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.textbanner p:nth-child(2){
+    color: rgba(0, 0, 0, 0.38);
+}
+.bannercontent__imgcontainer{
+    width: 100%;
+    text-align: center;
+}
+.bannercontent img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.bannercontent p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+color: rgba(0, 0, 0, 0.6);
+margin: 0px 20px 15px 20px;
+text-align: justify;
+}
+.lowerbanner{
+background: #FBFBFB;
+border: 1px solid #DBDBDB;
+border-radius: 0px 0px 5px 5px;
+display: flex;
+justify-content: space-between;
+position: relative;
+top: -2px;
+margin-bottom: 30px;
+}
+.lowerbanner p{
+    display: block;    
+    height: 100%;
+    padding-top: 5px;
+    color: #BDBDBD;
+}
+.lowerbanner p:nth-child(1){
+    margin-left: 15px;
+}
+.lowerbanner p:nth-child(2){
+    margin-right: 15px;
+}
+.lowerbanner p:nth-child(1)::before{
+    background-image: url(../images/likeicon.svg);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    position: relative;
+    top: 2px;
+    margin-top: 8px;
+    margin-right: 5px;
+    content:"";
+}
+.lowerbanner p:nth-child(2)::before{
+    background-image: url(../images/commenticon.svg);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-top: 8px;
+    margin-right: 5px;
+    content:"";
+}
+.lowerbanner p:hover{
+    color: hsla(0, 0%, 18%, 0.562);  
+    font-weight: bold;
+}
+
+
+/* Contenu de droite */
+
+.rightcontent{
+    width: 450px;
+}
+.suggestcontent{
+    display: flex;
+    margin-bottom: 30px;
+}
+.suggestcontent img{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-right: 15px;
+}
+.suggestbanner p:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+}
+.suggestbanner p:nth-child(2){
+    color: rgba(0, 0, 0, 0.65);
+    position: relative;
+    top: -10px;
+}
+.suggestbanner a::before{
+    background-image: url(../images/addusericon.svg);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    content:"";
+}
+.suggestbanner a{
+    text-decoration: none;
+    color: black;
+}
+.suggestbanner a:hover{
+    font-weight: bold;
+}
+.separatesection{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.separatesection h3{
+    margin-bottom: 0px;
+}
+.separatesection hr{
+    border: 1px solid black;
+}
+
+/*media query */
+
+@media screen and (max-width: 1795px) {
+    .maincontent{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+    }
+    .leftcontent { 
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .allcontent { grid-area: 1 / 2 / 2 / 3; 
+        width: 100%;
+    }
+    .rightcontent {
+        grid-area: 2 / 2 / 3 / 3;
+        width: 90%;
+    }
+    .middlecontent{
+        width: 90%;
+    }
+    .topbar{
+        width: 100%;
+    }
+}
